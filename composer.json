@@ -1,0 +1,12 @@
+{
+  "require": {
+    "follower/core": "dev-master",
+    "phpmailer/phpmailer": "^5.2"
+  },
+  "autoload": {
+    "classmap": [
+      "vendor/follower/core/backend",
+      "app"
+    ]
+  }
+}

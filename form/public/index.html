@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>React App</title>
+    <style>
+      .myform {
+        width: 80%;
+        margin: 1em auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mysite">
+      <div class="myform"></div>
+    </div>
+    <script>
+      window.feedbackConfig = {
+        element: '.myform',
+        email: 'vitfollower@gmail.com',
+        fields: [
+          {
+            name: 'Name',
+            type: 'text',
+            validation: 'name',
+            error: 'Please input your name',
+            key: 'name',
+          },
+          {
+            name: 'Email',
+            type: 'text',
+            validation: 'email',
+            error: 'Please enter valid email',
+            key: 'email',
+          },
+          {
+            name: 'Comment',
+            type: 'textarea',
+            validation: 'text',
+            error: 'Your comment shold be little longer',
+            key: 'comment',
+          },
+        ],
+        messages: {
+          success: "Form submit success",
+          error: "Network error",
+        },
+      };
+    </script>
+  </body>
+</html>

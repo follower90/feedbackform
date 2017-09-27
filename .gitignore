@@ -1,0 +1,9 @@
+/vendor
+/tmp
+/log
+/.idea
+start_nginx
+stop_nginx
+nginx.conf
+/form/node_modules
+/form/build
